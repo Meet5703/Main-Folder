@@ -1,0 +1,51 @@
+/* b-1 */
+nav a{
+    color: red;
+}
+
+/* b-2 */
+nav > h2{
+    background-color: rgb(67, 67, 67);
+    color: cornsilk;
+}
+
+/* b-3 */
+div + p{
+    color: rgb(208, 4, 4);
+}
+
+
+/* c-1 */
+a[href]{
+    color: rgb(255, 2, 2);
+    text-decoration: none;
+}
+
+/* c-2 */
+a[class="active"]{
+    color: yellow;
+    font-style: italic;
+}
+
+/* c-3 */
+a[target="_self"]{
+    background-color: darkcyan;
+}
+
+
+/* d-1 */
+p ~ p::after{
+    content: '...';
+}
+
+
+/* d-2 */
+li::marker{
+    color: rgb(21, 0, 255);
+}
+
+/* d-3 */
+div + p + p::first-letter{
+    color: red;
+    font-size: 30px;
+}
