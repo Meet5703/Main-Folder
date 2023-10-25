@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img media</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 10px;
+        }
+        .pics{
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+        }
+        @media (max-width: 800px) and (min-width: 500px){
+            .main{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px){
+            .main{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="pics" src="https://cdn.wallpapersafari.com/6/83/LWOn0X.jpg" alt="1">
+        <img class="pics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNxb-_DrsMRvMtZxoUCPCbhjLYz6dEUuXd4Q&usqp=CAU" alt="2">
+        <img class="pics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgIt6q1G84jQSQvy7dssaxUA3NrkKCOrPF8w&usqp=CAU" alt="3">
+    </div>
+</body>
+</html>

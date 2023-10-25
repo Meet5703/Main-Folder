@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        
+        .main {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            font-size: 4vw;
+            text-align: center;
+        }
+        .box1,.box4{
+            background-color: rgb(126, 10, 10);
+            padding: 20px;
+            color: aliceblue;
+        }
+        .row-container{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .box2, .box3{
+            padding: 9.1vw;
+            color: white;
+            text-align: center;
+        }
+        .box2{
+            background-color: blueviolet;
+        }
+        .box3{
+            background-color: rgb(125, 85, 12);
+        }
+
+        @media (max-width: 768px){
+            .main{
+                flex-direction: column;
+            }
+            .box2, .box3{
+                padding: 4.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">Box 1</div>
+        <div class="row-container">
+            <div class="box2">Box 2</div>
+            <div class="box3">Box 3</div>
+        </div>
+        <div class="box4">Box 4</div>
+    </div>
+</body>
+</html>
