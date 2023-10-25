@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .main{
+            background-color: slategrey;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 
+            'b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2'
+            'b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2'
+            'b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2'
+            'b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2'
+            'b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2'
+            'b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2'
+            'b3 b3 b3 b3 b4 b4 b4 b4 b2 b2 b2 b2'
+            'b3 b3 b3 b3 b4 b4 b4 b4 b2 b2 b2 b2'
+            'b3 b3 b3 b3 b4 b4 b4 b4 b2 b2 b2 b2'
+            'b3 b3 b3 b3 b4 b4 b4 b4 b2 b2 b2 b2'
+            'b3 b3 b3 b3 b4 b4 b4 b4 b2 b2 b2 b2'
+            'b3 b3 b3 b3 b4 b4 b4 b4 b2 b2 b2 b2'
+            ;
+            gap: 15px;
+            margin: 10%;
+        }
+        .Box1{
+            grid-area: b1;
+            color: whitesmoke;
+            background-color: rgb(81, 3, 3);
+            border-radius: 25px;
+        }
+        .Box2{
+            border-radius: 25px;
+            grid-area: b2;
+            color: whitesmoke;
+            background-color: rgb(81, 3, 3);
+        }
+        .Box3{
+            border-radius: 25px;
+            grid-area: b3;
+            color: whitesmoke;
+            background-color: rgb(81, 3, 3);
+        }
+        .Box4{
+            border-radius: 25px;
+            grid-area: b4;
+            color: whitesmoke;
+            background-color: rgb(81, 3, 3);
+        }
+        h1{
+            justify-self: center;
+            margin-top: 10%;
+            margin-left: 10%;
+            font-size: 90px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="Box Box1"><h1>A</h1></div>
+        <div class="Box Box2"><h1>B</h1></div>
+        <div class="Box Box3"><h1>C</h1></div>
+        <div class="Box Box4"><h1>D</h1></div>
+    </div>
+</body>
+</html>

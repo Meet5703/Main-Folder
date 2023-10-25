@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .main{
+            background-color: slategrey;
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+            'i1 i1 i1 i1 i1 i1 i1 i1 i2 i2 i2 i2'
+            'i1 i1 i1 i1 i1 i1 i1 i1 i2 i2 i2 i2'
+            'i1 i1 i1 i1 i1 i1 i1 i1 i2 i2 i2 i2'
+            'i1 i1 i1 i1 i1 i1 i1 i1 i2 i2 i2 i2'
+            'i3 i3 i3 i3 i4 i4 i4 i4 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i4 i4 i4 i4 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i4 i4 i4 i4 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i4 i4 i4 i4 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i6 i6 i6 i6 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i6 i6 i6 i6 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i6 i6 i6 i6 i5 i5 i5 i5'
+            'i3 i3 i3 i3 i6 i6 i6 i6 i5 i5 i5 i5'
+            ;
+            gap: 10px;
+        }
+        .img1{
+            grid-area: i1;
+            background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=sph);
+            background-size: cover;
+        }
+        .img2{
+            grid-area: i2;
+            background-image: url(https://img.freepik.com/free-photo/glowing-lines-human-heart-3d-shape-dark-background-generative-ai_191095-1435.jpg);
+            background-size: cover;
+        }
+        .img3{
+            grid-area: i3;
+            background-image: url(https://images.unsplash.com/photo-1502989642968-94fbdc9eace4?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwxMDY1OTc2fHxlbnwwfHx8fHw%3D);
+            background-size: cover;
+        }
+        .img4{
+            grid-area: i4;
+            background-image: url(https://images.ctfassets.net/hrltx12pl8hq/6KAbKYoF4pZ6QHcwBJuwa1/5441b32dd5b5ace2a9d93dd169ddfdd0/wallpaper-images-hero.jpg?fit=fill&w=600&h=400);
+            background-size: cover;
+        }
+        .img5{
+            grid-area: i5;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRhAAintyIbC6zmhrIl8a6WkZ9N3UrUu4OdQ&usqp=CAU);
+            background-size: cover;
+        }
+        .img6{
+            grid-area: i6;
+            background-image: url(https://content.wepik.com/statics/5575161/preview-page0.jpg);
+            background-size: cover;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="img6"></div>
+    </div>
+</body>
+</html>

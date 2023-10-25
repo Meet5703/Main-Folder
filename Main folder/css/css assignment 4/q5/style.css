@@ -1,0 +1,263 @@
+/* universal selector */
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    outline-style: none;
+}
+
+/* railway main image */
+.img-rail img{
+    margin-left: 70%;
+    margin-top: -41.6%;
+    max-height: 100vh;
+}
+
+
+/* navigation bar and logos */
+.header{
+    font-family: sans-serif;
+    margin-top: 3%;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.menu_text{
+    margin-left: 3vw;
+}
+.menu .menu_text a{
+    flex-wrap: wrap;
+    width: 50vw;
+    margin-left: 1vw;
+}
+.menu .menu_buttons button{
+    background-color: transparent;
+    border: 1px solid grey;
+    width: 5vw;
+    height: 4vh;
+    margin-right: 0.6vw;
+    border-radius: 5px;
+}
+.menu_buttons button:hover{
+    background-color: orange;
+    color: white;
+    transition: 0.3s;
+}
+#active{
+    background-color: orange;
+    color: white;
+}
+
+
+
+/* Indian Railways main heading */
+.heading{
+    font-family: sans-serif;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 12vw;
+    margin-top: 6%;
+}
+.heading1{
+    font-size: 1.75vw;
+}
+.heading2{
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 2vw;
+}
+.sub-buttons{
+    margin-left: 11.4vw;
+    margin-top: 2.5%;
+    width: 28vw;
+    display: flex;
+    justify-content: space-around;
+}
+.btn1{
+    border: 2px solid grey;
+    width: 8vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn2{
+    border: 2px solid grey;
+    width: 8vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn3{
+    border: 2px solid grey;
+    width: 8vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1 svg{
+    width: 2vw;
+}
+.btn2 svg{
+    width: 1.5vw;
+}
+.btn1{
+    background-color: rgb(4, 4, 91);
+}
+.btn1 a{
+    color: white;
+}
+.btn1 svg{
+    fill: white;
+}
+.btn:hover{
+    background-color: rgb(4, 4, 91);
+    transition: 0.3s;
+}
+.btn:hover a{
+    color: white;
+    transition: 0.3s;
+}
+.btn:hover svg{
+    fill: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* train select from where to where */
+.search_train{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.8%;
+    width: 43vw;
+    height: 10vh;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 11.8vw;
+} 
+.From{
+    width: 10vw;
+}
+.From ul{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.From h4{
+    display: flex;
+    font-size: 3vh;
+    align-items: center;
+    font-weight: 800;
+}
+.train_icon svg{
+    height: 3.5vh;
+    margin-left: -5%;
+}
+.line1{
+    float: left;
+    color: rgb(83, 83, 83);
+}
+.line2{
+    flex-wrap: wrap;
+    float: left;
+    margin-left: 24%;
+    color: rgb(83, 83, 83);
+}
+.mid_icn svg{
+    height: 5.6vh;
+}
+
+/* Ticket delails */
+.search_train2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 1%;
+    width: 43vw;
+    height: 10vh;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 11.8vw;
+}
+.calender-icn svg{
+    height: 3vh;
+    margin-left: 120%;
+}
+.icn-3 svg{
+    height: 3vh;
+    margin-left: 80%;
+}
+.date{
+    margin-left: -5%;
+    width: 12vw;
+}
+.line3{
+    float: left;
+    margin-left: 55%;
+    font-size: 2.6vh;
+    font-weight: 800;
+}
+.down{
+    margin-left: -10%;
+    display: flex;
+    color: rgb(83, 83, 83);
+}
+.Day{
+    margin-left: 40%;
+    flex-wrap: wrap;
+    color: rgb(83, 83, 83);
+}
+.line4{
+    float: left;
+    margin-left: 20%;
+    font-size: 2.6vh;
+    font-weight: 800;
+    color: rgb(83, 83, 83);
+}
+
+
+/* train search button */
+.book-btn button{
+    font-family: sans-serif;
+    margin-left:13%;
+    margin-top: 1%;
+    width: 40vw;
+    font-size: 4vh;
+    height: 6vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.book-btn button:hover{
+    background-color: rgb(2, 177, 2);
+    cursor: pointer;
+    transition: 0.4s;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+            background-size: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+        }
+        .container{           
+            width: 30vw;
+            height: 80vh;
+            border-radius: 6%;
+            box-shadow: 0 0 3px 2px rgb(194, 191, 191);
+            background-color: #e7c6c6;
+            border: 4px solid rgb(246, 143, 143);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+            flex-wrap: nowrap;
+        }
+        .container2{
+            background-color: rgb(0, 61, 61);
+            color: whitesmoke;
+        }
+        .heading{
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 1.5vw;
+            display: flex;
+            margin-top: 3%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(243, 130, 130);
+            height: 10vw;
+            width: 65vh;
+            border-radius: 2vw 2vw 2vw 2vw;
+            box-shadow: 0 0 5px gray;
+        }
+        .content{
+            display: flex;
+            align-self: flex-start;
+            flex-direction: column;
+        }
+        .content h1{
+            margin-left: 8%;
+            margin-top: 2%;
+            font-size: 4vw;
+        }
+        .content ul{
+            margin-top: 1%;
+            font-size: 1.5vw;
+        }
+        .content li{
+            margin-left: 5%;
+            width: 100vw;
+            justify-content: center;
+        }
+        svg{
+            padding: 0;
+            width: 6vw;
+            height: 6vh;
+        }
+        .btn button{
+            margin-top: 3%;
+            outline-style: none;
+            background-color: transparent;
+            border: 3px solid rgb(243, 130, 130);
+            font-size: 1.5vw;
+            color: rgb(243, 130, 130);
+            width: 15vw;
+            height: 6vh;
+        }
+        .container2 .btn button{
+            margin-top: 3%;
+            outline-style: none;
+            background-color: transparent;
+            border: 3px solid rgb(3, 142, 142);
+            font-size: 1.5vw;
+            color: rgb(3, 142, 142);
+            width: 15vw;
+            height: 6vh;
+        }
+        .container1:hover{
+            border: 3px solid rgb(246, 143, 143);
+            width: 31vw;
+            height: 81vh;
+            transition: 0.4s;
+            box-shadow: 0 0 10px 4px rgb(246, 143, 143);
+        }
+        .container2:hover{
+            border: 3px solid rgb(246, 143, 143);
+            width: 31vw;
+            height: 81vh;
+            transition: 0.4s;
+            box-shadow: 0 0 10px 8px rgb(246, 143, 143);
+        }
+        .container3:hover{
+            border: 3px solid rgb(246, 143, 143);
+            width: 31vw;
+            height: 81vh;
+            transition: 0.4s;
+            box-shadow: 0 0 10px 4px rgb(246, 143, 143);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(243, 130, 130);
+            color: white;
+            border: 4px solid white;
+        }
+        .container2 .btn button:hover{
+            cursor: pointer;
+            background-color: rgb(3, 142, 142);
+            color: white;
+            border: 4px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container container1">
+            <div class="heading">
+                <h1 style="font-size: 4vw;">Free Plan</h1>
+                
+                <p style="font-size: 1.3vw; align-self: flex-start; margin-left: 22%; font-family: monospace; font-weight: 600;">for personal use</p><strong></strong>
+            </div>
+            <div class="content">
+                <h1 style="">$0</h1>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>1 users</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>4 web-mails</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>Responsive Website</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>Free SSL</li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button>subscribe</button>
+            </div>
+        </div>
+        <div class="container container2">
+            <div class="heading" style="background-color: rgb(3, 142, 142);  ">
+                <h1 style="font-size: 4vw;">Basic Plan</h1>
+                
+                <p style="font-size: 1.3vw; align-self: flex-start; margin-left: 21%; font-family: monospace; font-weight: 600;">For Small Business use</p><strong></strong>
+            </div>
+            <div class="content">
+                <h1 style="">$29</h1>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>4 users</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>10 web-mails</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>Responsive Website</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>Free SSL</li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button>subscribe</button>
+            </div>
+        </div>
+        <div class="container container3">
+            <div class="heading">
+                <h1 style="font-size: 4vw;">Pro Plan</h1>
+                
+                <p style="font-size: 1.3vw; align-self: flex-start; margin-left: 22%; font-family: monospace; font-weight: 600;">For Enterprises</p><strong></strong>
+            </div>
+            <div class="content">
+                <h1 style="">$49</h1>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>unlimited users</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>unlimited web-mails</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>Responsive Website</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#3d8940" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+                        </svg>Free SSL+SEO</li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button>subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

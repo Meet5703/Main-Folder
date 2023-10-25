@@ -1,0 +1,41 @@
+
+    <!-- Auto Rows: auto rows are used for increase or decrease the value of height if we dont give any value to Row it will take auto value as default value -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid auto and columns</title>
+    <style>
+    .main_row{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 6px;
+        grid-auto-rows: 360px;
+    }
+    .row{
+        border: 1px solid rgb(252, 212, 137);
+        background-color: rgb(241, 230, 209);
+    }
+    </style>
+</head>
+<body>
+    <div class="R">
+        <h1>Auto Rows</h1>
+        <div class="main_row">
+            <div class="row">1</div>
+            <div class="row">2</div>
+            <div class="row">3</div>
+            <div class="row">4</div>
+            <div class="row">5</div>
+            <div class="row">6</div>
+        </div>
+    </div>
+</body>
+</html>

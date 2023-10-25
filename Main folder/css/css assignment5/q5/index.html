@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify item and self</title>
+    <style>
+        .diffrence{
+            font-size: 1.2vw;
+        }
+
+        .container{
+            width: 50vw;
+            height: 40vh;
+            background-color: azure;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 15vh);
+            display: grid;
+            justify-items: right;
+            font-size: 28px;
+            text-align: center;
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 10vw;
+            height: 10vh;
+            background-color: thistle;
+        }
+        .box3{
+            justify-self: left;
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="diffrence">
+        <h1>justify-items</h1>
+        <p>justify items is use for alignment of whole child content inside parent in this example 1,2,4,5,6,7,8 boxes are aligned right side which aligned from container div 
+        </p>
+        <h1>justify-self</h1>
+        <p>justify self is use for alignment of child individualy in this example 3 boxes are aligned left  side which aligned from box3 child div</p>
+    </div>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+</body>
+</html>
