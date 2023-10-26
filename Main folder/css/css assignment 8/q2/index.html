@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d cube</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .container{
+            perspective: 500px;
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cube{
+            width: 12vw;
+            height: 24vh;
+            transform-style: preserve-3d;
+            position: relative;
+            transform: rotate3d(1, 1, 0, 50deg);
+        }
+        .face{
+            width: 200px;
+            height: 200px;
+            background: rgb(235, 198, 135);
+            border: 2px solid rgb(255, 0, 0);
+            position: absolute;
+            opacity: 0.3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2vw;
+        }
+        .front{
+            transform: translateZ(14.4vh);
+        }
+        .back{
+            transform: translateZ(-14.4vh) rotateY(180deg);
+        }
+        .left{
+            transform: translateX(-14.4vh) rotateY(-90deg);
+        }
+        .right{
+            transform: translateX(14.4vh) rotateY(90deg);
+        }
+        .bottom{
+            transform: translateY(14.4vh) rotateX(-90deg);
+        }
+        .top{
+            transform: translateY(-14.4vh) rotateX(90deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cube">
+            <div class="face front">Front</div>
+            <div class="face back">Back</div>
+            <div class="face right">Right</div>
+            <div class="face left">Left</div>
+            <div class="face top">Top</div>
+            <div class="face bottom">Bottom</div>
+        </div>
+    </div>
+</body>
+</html>

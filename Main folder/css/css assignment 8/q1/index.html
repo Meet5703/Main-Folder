@@ -1,0 +1,51 @@
+<!-- var:  
+    var is variable property of css it will give us the acess of root of file we can give any kind of property predifinrd at root level and use those property to as per need with var property
+    
+    Inside root we will decide what will happens after apply that var property to element and we will use var as a property to any where with using var(root property) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            outline-style: none;
+        }
+        :root{
+            --mainbgcolor: #ccc;
+            --primarycolor: #00b7ff;
+            --secondarycolor: #6c757d;
+            --textcolor: white;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--mainbgcolor);
+        }
+        #primary{
+            background-color: var(--primarycolor);
+            color: var(--textcolor);
+            border: 1px solid white;
+            width: 10vw;
+            height: 8vh;
+        }
+        #secondary{
+            background-color: var(--secondarycolor);
+            color: var(--textcolor);
+            border: 1px solid white;
+            width: 10vw;
+            height: 8vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="primary">primaryBtn</button>
+        <button id="secondary">secondaryBtn</button>
+    </div>
+</body>
+</html>

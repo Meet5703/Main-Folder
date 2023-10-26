@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader infinite</title>
+    <style>
+        body{
+            background-color: rgb(211, 211, 211);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .spinme{
+            width: 2vw;
+            height: 2vw;
+            border: 0.7vh solid rgb(106, 106, 106);
+            border-radius: 6vw;
+            margin-top: 45vh;
+            border-top: 0.7vh solid rgb(255, 0, 0);
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin{
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="spinme"></div>
+</body>
+</html>
