@@ -1,0 +1,11 @@
+@font-face {
+    font-family: icomoon;
+    src: url(/2f55674dfc22d2809b2de122e9663a42.eot);
+    src: url(/2f55674dfc22d2809b2de122e9663a42.eot#iefix) format("embedded-opentype"),
+         url(/40e15d2b7fca011861b07a5dadd0f212.ttf) format("truetype"),
+         url(/42ee21e7d6a604910e6b5f1cc68fbc09.woff) format("woff"),
+         url(/25dbf09538a3980614442b6f0079116b.svg#icomoon) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}

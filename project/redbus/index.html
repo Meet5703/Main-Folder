@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbus</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font.css">
+    <style>
+        .custom-bg{
+            height: 75%;
+            background-image: url(https://st.redbus.in/Images/HomeIndia/HeroImage.png);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="container w-screen h-screen">
+    <div>
+        <div class="flex justify-center">
+            <nav class=" flex items-center h-28 mx-auto">
+                <div class="cursor-pointer">
+                    <img  src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" alt="REDBUS LOGO">
+                </div>
+                <div class="p-16">
+                    <span class="text-center items-center text-3xl font-extralight text-gray-200">|</span>
+                </div>
+                <ul class="flex gap-2 w-fit">
+                    <li class="grayscale brightness-0 hover:grayscale-0 hover:brightness-100 flex flex-col items-center hover:bg-gray-200 py-2 px-4 rounded-lg duration-300 cursor-pointer">
+                        <img src="https://st.redbus.in/web/images/layout/rb_vertical.svg" alt="icn">
+                        <a class="pt-1" href="#">Bus Tickets</a>
+                    </li>
+                    <li class="grayscale brightness-0 hover:grayscale-0 hover:brightness-100 flex flex-col items-center hover:bg-gray-200 py-2 px-4 rounded-lg duration-300 cursor-pointer">
+                        <img src="https://st.redbus.in/web/images/layout/ryde_vertical.svg" alt="icn">
+                        <a class="pt-1" href="#">Bus Tickets</a>
+                    </li>
+                    <li class="grayscale brightness-0 hover:grayscale-0 hover:brightness-100 flex flex-col items-center hover:bg-gray-200 py-2 px-4 rounded-lg duration-300 cursor-pointer">
+                        <img src="https://st.redbus.in/web/images/layout/rail_vertical.svg" alt="icn">
+                        <a class="pt-1" href="#">Bus Tickets</a>
+                    </li>
+                </ul>
+                <ul class="flex gap-6 items-center ml-72">
+                    <li class="flex items-center gap-1 hover:bg-gray-200 rounded-lg duration-300 p-2 cursor-pointer"> 
+                        <span class="material-symbols-outlined">
+                        headset_mic
+                        </span>
+                        <a href="#">Help</a>
+                    </li>
+                    <li class="flex justify-evenly items-center gap-1 hover:bg-gray-200 rounded-lg duration-300 p-2 cursor-pointer">
+                        <i class="fa fa-user-circle-o"></i>
+                        <a href="">Account</a>
+                        <i class="fa fa-angle-down"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- <i class="fa fa-exchange rounded-full w-fit scale-110 border-2 absolute left-40 border-gray-300"></i> -->
+    <div class="custom-bg">
+        <div class="text-3xl text-center w-screen top-44 absolute font-semibold text-white font-['Montserrat']">
+            India's No. 1 Online Bus Ticket Booking Site
+        </div>
+        <div class="absolute ml-80 top-64 p-0 w-fit bg-white rounded-3xl">
+            <div class="flex items-center">
+                <!-- Section 1: From -->
+                <div class="hover:cursor-pointer hover:bg-gray-100 flex items-center py-8 px-4 border-r-2 border-gray-300 rounded-l-3xl">
+                    <div class="w-8 h-8 mt-4">
+                        <img src="https://img.icons8.com/fluency-systems-filled/100/get-on-bus.png" alt="get-on-bus"/>
+                    </div>
+                    <div class="relative w-fit h-3 top-2">
+                        <input
+                            type="text"
+                            id="from"
+                            class="block px-2 py-4 hover:cursor-pointer w-full text-base text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "
+                        />
+                        <label
+                            for="from"
+                            class="absolute text-xl text-gray-500 duration-300 transform -translate-y-8 scale-75 top-1/2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-8"
+                        >
+                            From
+                        </label>
+                    </div>
+                </div>
+
+                <div class="absolute bg-white left-[241px] px-3 py-2 rounded-full h-fit w-fit border-2 border-gray-300 text-gray-300 hover:shadow-[0_0_3px_0_rgb(159,161,159)] hover:cursor-pointer">
+                    <i class="fa fa-exchange"></i>
+                </div>
+    
+                <!-- Section 2: To -->
+                <div class="hover:cursor-pointer hover:bg-gray-200 flex space-x-3 items-center px-6 py-8 border-r-2 border-gray-300">
+                    <div class="w-8 h-8 mt-4">
+                        <img class="grayscale" src="https://img.icons8.com/ios-filled/100/get-off-bus.png" alt="get-on-bus"/>
+                    </div>
+                    <div class="relative w-fit h-3 top-2">
+                        <input
+                            type="text"
+                            id="to"
+                            class="block px-2 py-4 hover:cursor-pointer w-full text-base text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "
+                        />
+                        <label
+                            for="to"
+                            class="absolute text-xl text-gray-500 duration-300 transform -translate-y-8 scale-75 top-1/2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-8"
+                        >
+                            To
+                        </label>
+                    </div>
+                </div>
+    
+                <!-- Section 3: Date -->
+                <div class="hover:cursor-pointer hover:bg-gray-200 flex items-center px-4 py-[49px]  h-full border-r-2 border-gray-300">
+                    <div class="relative w-fit h-3">
+                        <div class="flex ">
+                            <div>
+                                <input
+                                type="date"
+                                id="date"
+                                class="block scale-150 px-2 py-1 hover:cursor-pointer w-1/4 text-base text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder="date"
+                            />
+                            </div>
+                            <div class="absolute left-10">
+                                <label
+                            for="date"
+                            class=" text-xl text-gray-500 duration-300 transform -translate-y-8 scale-75 top-1/2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-8"
+                        >
+                            Date
+                        </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Section 3: Date -->
+                <div class="hover:cursor-pointer bg-red-400 flex items-center px-2 py-[51px] rounded-r-3xl text-center">
+                    <div class="relative px-20 h-3 top-5 right-10 uppercase font-semibold">
+                        <input
+                            type="button"
+                            id="search"
+                            class="block px-2 py-4 hover:cursor-pointer w-full text-base text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "
+                        />
+                        <label
+                            for="search"
+                            class="absolute text-xl text-white duration-300 transform -translate-y-8 scale-75 top-1/2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-8"
+                        >
+                            Search
+                        </label>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
