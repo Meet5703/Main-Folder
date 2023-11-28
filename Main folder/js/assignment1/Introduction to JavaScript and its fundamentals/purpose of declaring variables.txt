@@ -1,0 +1,10 @@
+In JavaScript, we work with information. For example, when we have messages to use in JavaScript, we assign them values using variable declarations. In this example, we can declare a variable to hold messages like this 
+
+let messages;
+messages = "hello world";
+
+
+Here, an assignment operator is used to input the message data
+
+
+

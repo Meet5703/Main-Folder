@@ -1,0 +1,20 @@
+Precedence:
+            Precedence refers to the priority or order of operations among different types of operators.
+    Importance:
+             It defines which operator gets executed first in an expression.
+
+
+Associativity:
+             Associativity determines the order in which operators of the same precedence are evaluated when they appear together.
+    Importance: 
+            It clarifies the order of evaluation when multiple operators with the same precedence level are used.
+
+Why  its Important??
+
+Correctness: Knowing operator precedence ensures that expressions are evaluated correctly according to mathematical rules.
+
+
+Clarity: Understanding associativity prevents ambiguity in expressions where operators of the same precedence are used.
+
+
+Predictability: It helps in predicting the outcome of complex expressions and avoids unintended behavior.

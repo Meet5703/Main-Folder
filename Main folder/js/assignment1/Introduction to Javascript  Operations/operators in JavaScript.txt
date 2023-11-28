@@ -1,0 +1,3 @@
+Operators enable arithmetic operations (like addition, subtraction, multiplication, division), allowing developers to perform mathematical computations within programs.
+
+They help manipulate values by assigning, comparing, or modifying data, facilitating tasks like assigning values to variables (=), comparing values (==, ===, <, >, etc.), and modifying values in-place (e.g., +=, -=, ++, --).

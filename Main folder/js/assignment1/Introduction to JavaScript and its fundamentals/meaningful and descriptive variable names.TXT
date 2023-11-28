@@ -1,0 +1,15 @@
+Understanding Code: Descriptive names make it easy to understand the purpose of variables.
+
+Documentation: They serve as self-explanatory code, reducing the need for additional comments.
+
+Ease of Maintenance: Clear names make debugging and modifications easier.
+
+
+shortnamed meaningless
+let t = 50; // Represents the total price
+
+
+meaning with Descriptive 
+let totalPrice = 50; // this is more easy to understand and readable 
+
+Using totalPrice instead of t makes the code clearer and easier to grasp without requiring extra explanation

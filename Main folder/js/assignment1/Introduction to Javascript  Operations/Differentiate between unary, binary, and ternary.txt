@@ -1,0 +1,26 @@
+Unary Operators:
+
+Unary operators work on a single operand.
+Examples:
+Unary Negation (-): Changes the sign of a number.
+Pre-increment (++) and Pre-decrement (--): Increase or decrease the value of a variable by 1 before using its value in an expression.
+Typeof: Returns the data type of a value.
+
+
+
+Binary Operators:
+
+Binary operators work on two operands.
+Examples:
+Addition (+): Adds two numbers or concatenates strings.
+Subtraction (-): Subtracts one number from another.
+Multiplication (*) and Division (/): Perform multiplication and division operations.
+
+
+
+
+Ternary Operator:
+
+Ternary operator is the only operator in JavaScript that takes three operands.
+Example:
+Conditional (Ternary) Operator: Evaluates a condition and returns one of two values based on that condition.

@@ -1,0 +1,49 @@
+Arithmetic Operators: Used for mathematical calculations.
+
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/)
+Modulus (Remainder) (%)
+Increment (++) - Increases the value by 1
+Decrement (--) - Decreases the value by 1
+
+
+
+Assignment Operators: Used to assign values to variables.
+Assignment (=)
+Addition assignment (+=)
+Subtraction assignment (-=)
+Multiplication assignment (*=)
+Division assignment (/=)
+Modulus assignment (%=)
+
+
+
+Comparison Operators: Used to compare values and return a Boolean result.
+Greater than (>)
+Less than (<)
+Greater than or equal to (>=)
+Less than or equal to (<=)
+Equal to (strict equality) (===)
+Not equal to (!==)
+
+
+
+Logical Operators: Used for logical operations on Boolean values.
+Logical AND (&&)
+Logical OR (||)
+Logical NOT (!)
+
+
+
+Unary Operators: Operators that perform operations on a single operand.
+Unary negation (-)
+Pre-increment (++)
+Pre-decrement (--)
+Typeof (Returns the data type of the operand)
+
+
+
+Ternary Operator (Conditional Operator): A conditional operator that evaluates a condition and returns one of two values based on that condition.
+Conditional (ternary) operator: (condition ? value1 : value2)

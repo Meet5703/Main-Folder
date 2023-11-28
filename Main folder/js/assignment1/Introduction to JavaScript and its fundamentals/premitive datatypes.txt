@@ -1,0 +1,9 @@
+Number: Represents numeric values, including integers (whole numbers) and floating-point numbers (decimal numbers). In JavaScript, numbers are represented using a 64-bit floating-point format (IEEE-754).
+
+String: Represents textual data, enclosed within single quotes (' '), double quotes (" "), or backticks (` '). Strings are immutable sequences of characters used for representing text-based information.
+
+Boolean: Represents a logical value, true or false, used for making decisions and controlling the flow of programs based on conditions.
+
+Undefined: Denotes a declared variable that has not been assigned a value yet. It's automatically assigned to variables that are declared but not initialized.
+
+Null: Represents an intentional absence of any value or a null object pointer. It's explicitly assigned to signify the absence of a value or a null reference.

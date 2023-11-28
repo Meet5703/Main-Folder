@@ -1,0 +1,12 @@
+javascript is a programming language which is adds some logics in the website and also use for add some animations and interections to website for make a better user experience for a website javascript written in round braces () brace brackets{} and box brackets []
+
+html is a hyper text markup language which are use for make a skeleton structure of a website which has many kind of tags for diffrent uses like header ,nav ,article ,section ,div ,footer etc... all tags are written inside of angle brackets <>
+
+
+here we can take an example for easy to understand we are using form example 
+
+For HTML Uses
+in html we can make a login form using <form> <input> and <label> and also we can use some attributes for it but it can not validate the data it will just run data without validation 
+
+For javascript uses
+in js we can use many objects arrays and some mathematical calculations for validation of form data if i entered wrong data it will not proceed to next page 
