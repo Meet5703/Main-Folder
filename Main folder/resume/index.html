@@ -3,41 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume</title>
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="w-screen h-screen bg-slate-700">
-    <div id="main" class="w-screen font-sans">
-        <div id="left" class="w-2/4 md:w-2/5 lg:w-1/5 h-screen flex flex-col items-center bg-blue-200 text-cyan-950 divide-y-2 divide-black 2xl:gap-12">
-            <div class="flex flex-col items-center 2xl:gap-8">
-                <img src="./assets/profile-pic (1).png" alt="img" class="w-2/3 md:w-2/4 ">
-                <h1 class="text-xl md:text-2xl 2xl:text-5xl">@MeetKhetani</h1>
-                <div class="text-center">
-                    <p class="text-[11px] md:text-base lg:text-sm xl:text-xl 2xl:text-3xl">Hi, I'm Meet. I am a Full-stack web developer with MERN stack skills. I can develop web applications with a strong foundation in various technologies.</p>
-                </div>
+<body class="text-blue-950">
+    <div id="main" class="w-full h-screen flex">
+        <div id="left" class="p-2 w-1/2 h-full flex flex-col items-center text-black bg-blue-400 ">
+            <div class="w-full h-1/4 flex flex-col items-center">
+                <img src="./assets/profile-pic (1).png" alt="img" class="md:w-2/5 w-2/4 lg:w-2/6 xl:w-1/4">
+                <h1 class="text-base md:text-xl xl:text-3xl text-indigo-700 font-semibold">@MeetKhetani</h1>
+                <p class="text-xs md:text-base xl:text-xl">Hi, I'm Meet. I am a Full-stack web developer with MERN stack skills. I can develop web applications with a strong foundation in various technologies.</p>
             </div>
-            <div class="flex flex-col items-center mt-3 2xl:gap-8">
-                <h1 class="text-xl md:text-2xl 2xl:text-5xl">Skills</h1>
-                <ul class="md:flex md:flex-col md:items-center text-center text-[11px] md:text-base lg:text-sm xl:text-xl 2xl:text-3xl">
-                    <li>HTML and HTML5</li>
-                    <li>CSS and CSS3</li>
-                    <li>Git and Github</li>
-                    <li>Foundation of Javascript</li>
-                    <li>React</li>
-                    <li>NodeJS and Express</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
+            <div class="w-full flex flex-col items-center mt-14 md:mt-[110px] p-1">
+                <h1 class="text-base border-y border-black w-full flex justify-center md:text-xl xl:text-3xl text-indigo-700 font-semibold">Contact</h1>
+                <ul class="flex flex-col items-center">
+                    <li class="text-[11px] md:text-[16px] xl:text-[20px] ">sureshkhetani1111@gmail.com</li>
+                    <li class="text-[11px] md:text-[16px] xl:text-[20px]">+917801931135</li>
                 </ul>
             </div>
-            <div class="mt-4 flex flex-col items-center 2xl:gap-8">
-                <h1 class="text-xl md:text-2xl 2xl:text-5xl">Contact</h1>
-                <ul class="flex flex-col items-center text-[11px] md:text-base lg:text-sm xl:text-xl 2xl:text-3xl">
-                    <li type="Email">sureshkhetani1111@gmail.com</li>
-                    <li>+917801931135</li>
+            <div class="w-full mt-9 flex flex-col items-center md:mt-2">
+                <h1 class="text-base border-y border-black w-full flex justify-center md:text-xl xl:text-3xl text-indigo-700 font-semibold">Skills</h1>
+                <ul class="flex">
+                    <ul class="text-center border-r border-black p-2">
+                        <li class="text-xs md:text-base xl:text-xl">HTML and HTML5</li>
+                        <li class="text-xs md:text-base xl:text-xl">CSS and CSS3</li>
+                        <li class="text-xs md:text-base xl:text-xl">Git and Github</li>
+                        <li class="text-xs md:text-base xl:text-xl">Javascript</li>
+                    </ul>
+                    <ul class="text-center p-2">
+                        <li class="text-xs md:text-base xl:text-xl">React</li>
+                        <li class="text-xs md:text-base xl:text-xl">NodeJS and Express</li>
+                        <li class="text-xs md:text-base xl:text-xl">MySQL</li>
+                        <li class="text-xs md:text-base xl:text-xl">MongoDB</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center mt-9 md:mt-2">
+                <h1 class="text-base border-y border-black w-full flex justify-center md:text-xl xl:text-3xl text-indigo-700 font-semibold">Education</h1>
+                <div class="flex flex-col items-center gap-1">
+                    <h2 class="text-xs md:text-base xl:text-xl">Full Stack Web-developer</h2>
+                    <p class="text-xs md:text-base xl:text-xl">PW-Skills,2023-24</p>
+                </div>
+                <!-- Add more educational experiences as needed -->
+            </div>
+            <div class="md:text-xl xl:text-2xl">
+                <ul class="flex gap-4 mt-6 lg:mt-1">
+                    <li><a href="https://github.com/Meet5703">	<i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/mr.meet_khetani/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/meet-khetani-a1608a297/"><i class="fa fa-linkedin-square"></i></a></li>
                 </ul>
             </div>
         </div>
-        <div id="right">
+        <div id="right" class="w-1/2 h-full flex flex-col items-center gap-5 xl:gap-10 bg-blue-200">
+            <div class="pb-8 ">
+                <h1 class="text-base mt-4 border-y border-black w-full flex justify-center md:text-xl xl:text-3xl text-indigo-700 font-semibold">Experience</h1>
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xs md:text-lg xl:text-xl">Full-stack Developer Intern</h2>
+                    <p class="text-xs md:text-base xl:text-lg">Company Name, Duration</p>
+                    <p class="text-xs md:text-base xl:text-lg">Description of responsibilities and achievements.</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-9 mt-8">
+                <h1 class="text-base border-y border-black w-full flex justify-center md:text-xl xl:text-3xl text-indigo-700 font-semibold" >Projects</h1>
+                <div>
+                    <h2 class="text-xs flex justify-center md:text-lg xl:text-xl text-indigo-700 font-semibold">Project 1-Redbus Clone</h2>
+                    <p class="text-xs md:text-base xl:text-lg">As an assignment Project, PW-Skills</p>
+                    <p class="text-xs md:text-base xl:text-lg">Description of responsibilities and achievements.</p>
+                </div>
+                <div>
+                    <h2 class="text-xs flex justify-center border-t border-black pt-6 md:text-lg xl:text-xl text-indigo-700 font-semibold">Project 1-Redbus Clone</h2>
+                    <p class="text-xs md:text-base xl:text-lg">As an assignment Project, PW-Skills</p>
+                    <p class="text-xs md:text-base xl:text-lg">Description of responsibilities and achievements.</p>
+                </div>
+                <div>
+                    <h2 class="text-xs flex justify-center pt-6 border-t border-black md:text-lg xl:text-xl text-indigo-700 font-semibold">Project 1-Redbus Clone</h2>
+                    <p class="text-xs md:text-base xl:text-lg">As an assignment Project, PW-Skills</p>
+                    <p class="text-xs md:text-base xl:text-lg">Description of responsibilities and achievements.</p>
+                </div>
+                <!-- Add more work experiences as needed -->
+            </div>
         </div>
     </div>
 </body>
