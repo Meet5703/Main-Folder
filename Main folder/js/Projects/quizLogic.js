@@ -1,36 +1,44 @@
-let questionQue = document.querySelector("#question");
-let optA = document.querySelector("optA");
-let optB = document.querySelector("optB");
-let optC = document.querySelector("optC");
-let optD = document.querySelector("optD");
-function quiz(que, a, b, c, d) {
-  console.log(que);
-  console.log(`A: ${a}`);
-  console.log(`B: ${b}`);
-  console.log(`C: ${c}`);
-  console.log(`D: ${d}`);
-  return [que, a, b, c, d];
+let question = document.querySelector("#question");
+let optA = document.querySelector("#labelOptA");
+let optB = document.querySelector("#labelOptB");
+let optC = document.querySelector("#labelOptC");
+let optD = document.querySelector("#labelOptD");
+let correctAnswer; // Declaring correctAnswer globally
+
+function displayQuestion(que, a, b, c, d, correct) {
+  question.innerHTML = que;
+  optA.innerHTML = `A - ${a}`;
+  optB.innerHTML = `B - ${b}`;
+  optC.innerHTML = `C - ${c}`;
+  optD.innerHTML = `D - ${d}`;
+  correctAnswer = correct; // Storing the correct answer globally
 }
 
-function checkAnswer(userAnswer, correctAnswer) {
-  console.log(`Ans - ${userAnswer}`);
-  let score = 0;
-  if (userAnswer === correctAnswer) {
-    score = score + 10;
-    console.log(`Your score is now ${score}, Keep Going Good Work`);
+let score = document.querySelector("#score");
+score.innerHTML = `score = ${0}`;
+
+function answerCheck() {
+  let userAnswer = document.querySelector("input[name='option']:checked");
+  if (userAnswer) {
+    let selectedAnswer = userAnswer.value;
+    if (selectedAnswer === correctAnswer) {
+      let currentScore = parseInt(score.textContent.split("=")[1].trim());
+      let updatedScore = currentScore + 10;
+      score.innerHTML = `score = ${updatedScore}`;
+      console.log("Correct Answer!");
+    } else {
+      console.log("Wrong Answer, but it's okay. No negative marking.");
+      console.log(`Correct Answer is ${correctAnswer}`);
+    }
   } else {
-    console.log("Answer is Wrong, but it's okay, there's no negative marking.");
-    console.log(`Correct Answer is ${correctAnswer}`);
+    console.log("Please select an answer!");
   }
 }
 
-quiz("What is the value of 2 + 2 ?", 1, 2, 3, 4);
-checkAnswer(2, 4);
-quiz("What is the value of 2 + 2 ?", 1, 2, 3, 4);
-checkAnswer(2, 4);
-quiz("What is the value of 2 + 2 ?", 1, 2, 3, 4);
-checkAnswer(2, 4);
-quiz("What is the value of 2 + 2 ?", 1, 2, 3, 4);
-checkAnswer(2, 4);
-quiz("What is the value of 2 + 2 ?", 1, 2, 3, 4);
-checkAnswer(2, 4);
+let btn = document.querySelector("#submitAnswer");
+
+btn.addEventListener("click", function () {
+  answerCheck();
+});
+
+displayQuestion("What is the value of 2 + 2 ?", 1, 2, 3, 4, "4");
