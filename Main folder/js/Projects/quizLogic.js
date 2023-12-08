@@ -1,3 +1,8 @@
+let questionQue = document.querySelector("#question");
+let optA = document.querySelector("optA");
+let optB = document.querySelector("optB");
+let optC = document.querySelector("optC");
+let optD = document.querySelector("optD");
 function quiz(que, a, b, c, d) {
   console.log(que);
   console.log(`A: ${a}`);

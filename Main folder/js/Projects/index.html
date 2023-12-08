@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="Quiz">
+      <div id="questionAndOptions">
+        <h3 id="question"></h3>
+        <div id="options">
+          <div>
+            <label id="labelOptA" for="optA">A</label>
+            <input type="radio" name="option" id="optA" value="1" />
+          </div>
+          <div>
+            <label id="labelOptB" for="optB">B</label>
+            <input type="radio" name="option" id="optB" value="2" />
+          </div>
+          <div>
+            <label id="labelOptC" for="optC">C</label>
+            <input type="radio" name="option" id="optC" value="3" />
+          </div>
+          <div>
+            <label id="labelOptD" for="optD">D</label>
+            <input type="radio" name="option" id="optD" value="4" />
+          </div>
+        </div>
+        <button id="submitAnswer">Submit Answer</button>
+      </div>
+    </div>
+    <script src="./quizLogic.js"></script>
+  </body>
+</html>
