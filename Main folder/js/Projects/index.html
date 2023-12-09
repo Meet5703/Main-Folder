@@ -7,31 +7,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <video loop autoplay muted class="bg">
+      <source src="./assets/bg-vid.mp4" />
+    </video>
     <div id="Quiz">
       <div id="questionAndOptions">
+        <div id="title">
+          <h1>Quiz Arena</h1>
+        </div>
+        <div class="topbar">
+          <span><h3 id="score"></h3></span>
+          <span><h3 id="quect"></h3></span>
+        </div>
         <h3 id="question"></h3>
         <div id="options">
-          <div>
-            <label id="labelOptA" for="optA"></label>
-            <input type="radio" name="option" id="optA" value="1" />
-          </div>
-          <div>
-            <label id="labelOptB" for="optB"></label>
-            <input type="radio" name="option" id="optB" value="2" />
-          </div>
-          <div>
-            <label id="labelOptC" for="optC"></label>
-            <input type="radio" name="option" id="optC" value="3" />
-          </div>
-          <div>
-            <label id="labelOptD" for="optD"></label>
-            <input type="radio" name="option" id="optD" value="4" />
-          </div>
+          <input type="radio" name="option" id="optA" value="1" />
+          <label id="labelOptA" for="optA" class="opt"></label>
+
+          <input type="radio" name="option" id="optB" value="2" />
+          <label id="labelOptB" for="optB" class="opt"></label>
+
+          <input type="radio" name="option" id="optC" value="3" />
+          <label id="labelOptC" for="optC" class="opt"></label>
+
+          <input type="radio" name="option" id="optD" value="4" />
+          <label id="labelOptD" for="optD" class="opt"></label>
         </div>
-        <button id="submitAnswer">Submit Answer</button>
-        <span><h3 id="score"></h3></span>
+        <div class="btn">
+          <button id="previousQ">Pre</button>
+          <button id="submitAnswer">Submit Answer</button>
+          <button id="nextQ">Next</button>
+        </div>
+        <div id="optnotchkd"><h4></h4></div>
       </div>
     </div>
-    <script src="./quizLogic.js"></script>
+    <script src="./new.js"></script>
   </body>
 </html>

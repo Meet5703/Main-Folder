@@ -36,9 +36,15 @@ function answerCheck() {
 }
 
 let btn = document.querySelector("#submitAnswer");
-
+let idx = 0;
 btn.addEventListener("click", function () {
-  answerCheck();
+  if (idx === 0) {
+    answerCheck();
+    idx = 1;
+  } else {
+    idx = 0;
+  }
 });
 
 displayQuestion("What is the value of 2 + 2 ?", 1, 2, 3, 4, "4");
+displayQuestion("What is the value of 11 x 4 ?", 14, 44, 19, 8, "44");
