@@ -96,7 +96,7 @@ function queBank() {
   }
 
   score.textContent = `Score - ${initialscore}`;
-  queCount.textContent = `Question - ${queCt} / ${totalQuestions}`;
+  queCount.textContent = `Question :- ${queCt} / ${totalQuestions}`;
   return queNow;
 }
 let flagStop = 0;

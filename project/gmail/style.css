@@ -16,10 +16,42 @@ body {
   width: 5%;
   height: 100vh;
   background-color: #eaf1fb;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .nav {
-  width: 100vw;
-  height: 100px;
-  background: #000;
-  z-index: 1;
+  width: 95%;
+  height: 50px;
+  float: right;
+}
+#menu {
+  position: relative;
+  top: 3%;
+  font-size: 28px;
+}
+.left-bar ul {
+  position: relative;
+  top: 10%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.left-bar ul li {
+  border-radius: 25px;
+  padding: 2px 9px;
+  display: flex;
+}
+
+.left-bar ul li:focus {
+  outline: none;
+  background-color: #d3e3fd;
+  color: #2f476f;
+}
+.left-bar ul h4 {
+  margin-top: -20px;
+  font-size: 12px;
 }
