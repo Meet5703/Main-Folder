@@ -14,51 +14,72 @@ let objOFques = [
     correctAnswer: "C - New Delhi",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "Who was the first Prime Minister of India?",
+    options: [
+      "A - Mahatma Gandhi",
+      "B - Jawaharlal Nehru",
+      "C - Indira Gandhi",
+      "D -  Sardar Vallabhbhai Patel",
+    ],
+    correctAnswer: "B - Jawaharlal Nehru",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question:
+      "How many Lok Sabha (House of the People) seats are there in the Indian Parliament?",
+    options: ["A - 545", "B - 552", "C - 543", "D -  550"],
+    correctAnswer: "C - 543",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "Which Indian festival is known as the Festival of Lights?",
+    options: ["A - Holi", "B - Diwali ", "C - Navratri", "D - Ram-Navmi"],
+    correctAnswer: "B - Diwali",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "Who is known as the Missile Man of India?",
+    options: [
+      "A - Dr. A.P.J. Abdul Kalam",
+      "B - Vikram Sarabhai",
+      "C -  C.V. Raman",
+      "D - Homi Bhabha",
+    ],
+    correctAnswer: "A - Dr. A.P.J. Abdul Kalam",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "In which sport is the Ranji Trophy associated?",
+    options: ["A -  Cricket", "B - Hockey", "C -  Football", "D - Badminton"],
+    correctAnswer: "A -  Cricket",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "What is the currency of India?",
+    options: ["A - Rupee", "B - Rupiah", "C - Taka", "D - Baht"],
+    correctAnswer: "A - Rupee",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "Who wrote the book The 'Discovery of India'?",
+    options: [
+      "A -  Rabindranath Tagore",
+      "B - Jawaharlal Nehru",
+      "C - R.K. Narayan",
+      "D -  Vikram Seth",
+    ],
+    correctAnswer: "B - Jawaharlal Nehru",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question:
+      "What is the name of the historic monument located in Agra, India, built by Shah Jahan?",
+    options: [
+      "A -  Hawa Mahal",
+      "B -  Red Fort",
+      "C - Qutub Minar",
+      "D -  Taj Mahal",
+    ],
+    correctAnswer: "D -  Taj Mahal",
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
-    options: ["A - Jupiter", "B - Mars", "C - Venus", "D - Saturn"],
-    correctAnswer: "B - Mars",
+    question: "Which Indian city is known as the 'Oxford of the East'?",
+    options: ["A - Pune", "B - Kolkata", "C -  Mumbai", "D - Delhi"],
+    correctAnswer: "A - Pune",
   },
-  // Include other questions here...
 ];
 
 let index = 0;
