@@ -5,12 +5,14 @@
   list-style: none;
   text-decoration: none;
   outline-style: none;
+  font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 html,
 body {
   width: 100%;
   height: 100vh;
   background-color: #f6f8fc;
+  display: flex;
 }
 .left-bar {
   width: 5%;
@@ -23,13 +25,42 @@ body {
 }
 .nav {
   width: 95%;
-  height: 50px;
+  height: 64px;
   float: right;
+  position: absolute;
+  z-index: 1000;
+  background-color: transparent;
+  left: 30px;
+}
+.nav-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
 }
 #menu {
   position: relative;
   top: 3%;
   font-size: 28px;
+  border-radius: 50%;
+  padding: 8px;
+}
+#close {
+  font-size: 28px;
+  border-radius: 50%;
+  padding: 8px;
+}
+#search-icn {
+  font-size: 23px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+#menu:hover,
+#close:hover,
+#search-icn:hover {
+  background-color: #d8dfe8;
+  cursor: pointer;
 }
 .left-bar ul {
   position: relative;
@@ -54,4 +85,139 @@ body {
 .left-bar ul h4 {
   margin-top: -20px;
   font-size: 12px;
+  font-weight: 400;
+}
+.left-bar h4:focus {
+  font-weight: 600;
+}
+.hiddenmenu {
+  transition: all 0.5s ease-in-out;
+  width: 300px;
+  height: 80%;
+  margin-top: 64px;
+}
+.right-bar {
+  width: 95%;
+  height: 100%;
+  float: right;
+}
+.dot {
+  background-color: green;
+  width: 20%;
+  color: transparent;
+  padding: 1px 4px;
+  font-size: 8px;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+#btn-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-style: none;
+  border-radius: 30px;
+}
+#symbol-list {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: -10px;
+}
+.nav-middel {
+  background-color: #eaf1fb;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  border-radius: 25px;
+  padding: 5px;
+}
+.nav-middel div {
+  display: flex;
+}
+.nav-middel div input {
+  outline: none;
+  border-style: none;
+  background-color: transparent;
+  width: 44vw;
+  font-size: 15px;
+}
+#filter {
+  padding: 4px 4px;
+  border-radius: 50%;
+}
+
+.nav-middel:focus-within {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search:focus {
+  background-color: white;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#suggestions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: calc(100% + 40px);
+  background: white;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+#suggestions li {
+  padding: 10px;
+}
+
+#search:focus + #suggestions {
+  display: block;
+}
+.hiddenmenu ul li button {
+  background-color: transparent;
+  padding: 10px;
+  border-style: none;
+  outline-style: none;
+  border-radius: 12px;
+}
+.hiddenmenu ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.hiddenmenu ul li button {
+  background-color: #c2e7ff;
+  width: 10vw;
+  padding: 15px 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.hiddenmenu ul li button span {
+  margin-left: -10px;
+}
+
+.hiddenmenu ul li button:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }

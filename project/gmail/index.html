@@ -6,6 +6,20 @@
     <title>My-mail</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap"
+      as="style"
+      id="font-nce"
+      rel="stylesheet"
+      nonce=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&amp;display=swap"
+      as="style"
+      id="font-gst"
+      rel="stylesheet"
+      nonce=""
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
     />
@@ -19,9 +33,52 @@
     ></script>
   </head>
   <body>
-    <div class="nav"></div>
+    <div class="nav">
+      <div class="nav-sub">
+        <div class="nav-left">
+          <span id="close" class="material-symbols-outlined"> menu </span>
+          <span id="menu" class="material-symbols-outlined"> menu </span>
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+            alt=""
+          />
+        </div>
+        <div class="nav-middel" tabindex="0">
+          <div class="search-container">
+            <span id="search-icn" class="material-symbols-outlined">
+              search
+            </span>
+            <input type="search" id="search" placeholder="Search in mail " />
+            <div id="suggestions">
+              <ul>
+                <hr />
+                <li>Suggestion</li>
+                <hr />
+                <li>Recent</li>
+                <!-- Add more suggestions here -->
+              </ul>
+            </div>
+          </div>
+          <span id="filter" class="material-symbols-outlined"> tune </span>
+        </div>
+        <div class="nav-right">
+          <button id="btn-status">
+            <span class="dot">.</span>
+            <h4>Active</h4>
+            <span class="material-symbols-outlined"> expand_more </span>
+          </button>
+          <ul id="symbol-list">
+            <li><span class="material-symbols-outlined"> help </span></li>
+            <li><span class="material-symbols-outlined"> settings </span></li>
+            <li><span class="material-symbols-outlined"> apps </span></li>
+            <li>
+              <span class="material-symbols-outlined"> account_circle </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="left-bar">
-      <span id="menu" class="material-symbols-outlined"> menu </span>
       <ul>
         <li tabindex="0">
           <span class="material-symbols-outlined"> mail </span>
@@ -36,6 +93,22 @@
         </li>
         <h4>Meet</h4>
       </ul>
+    </div>
+    <div class="right-bar">
+      <div class="hiddenmenu" tabindex="0">
+        <ul>
+          <li>
+            <button>
+              <span class="material-symbols-outlined"> edit </span>
+              <h3>Compose</h3>
+            </button>
+          </li>
+          <li>b</li>
+          <li>c</li>
+          <li>d</li>
+          <li>e</li>
+        </ul>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
