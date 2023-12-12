@@ -855,6 +855,10 @@ video {
   animation-duration: 500ms;
 }
 
+.animate-duration-700 {
+  animation-duration: 700ms;
+}
+
 .animate-fill-backwards {
   animation-fill-mode: backwards;
 }
@@ -915,6 +919,16 @@ video {
 .hover\:bg-\[\#DADCE0\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(218 220 224 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[animate-jump-in\]:hover {
+  background-color: animate-jump-in;
+}
+
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .hover\:animate-duration-500:hover {
