@@ -14,14 +14,51 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <!-- Google Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&amp;display=swap"
+      as="style"
+      id="font-gst"
+      rel="stylesheet"
+      nonce=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap"
+      as="style"
+      id="font-nce"
+      rel="stylesheet"
+      nonce=""
+    />
+    <style>
+      * {
+        font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
+          sans-serif;
+      }
+    </style>
   </head>
   <body class="w-full h-screen bg-[#F6F8FC]">
     <div class="w-[68px] h-screen bg-[#EAF1FB] flex flex-col items-center">
       <span
-        class="material-symbols-outlined mt-6 font-bold p-3 rounded-full hover:bg-[#DDE3EC] hover:animate-fade hover:animate-duration-500"
+        class="material-symbols-outlined mt-2 font-bold p-3 rounded-full hover:bg-[#DDE3EC] hover:animate-fade hover:animate-duration-500 scale-110 hover:cursor-pointer"
       >
         menu
       </span>
+      <ul class="mt-4">
+        <li class="flex flex-col items-center justify-between h-12">
+          <div class="relative inline-block group">
+            <span class="material-symbols-outlined scale-90 hover:z-10"
+              >mail</span
+            >
+            <div
+              class="absolute inset-0 bg-[#DADCE0] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+          </div>
+          <h5 class="-mt-1">Mail</h5>
+        </li>
+        <li class="flex flex-col items-center justify-between h-12"></li>
+        <li class="flex flex-col items-center justify-between h-12"></li>
+        <li class="flex flex-col items-center justify-between h-12"></li>
+      </ul>
     </div>
   </body>
 </html>
