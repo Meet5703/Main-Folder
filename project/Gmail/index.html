@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
     <!-- Google Sans -->
     <link
       href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&amp;display=swap"
@@ -36,24 +40,135 @@
       }
     </style>
   </head>
-  <body class="w-full h-screen bg-[#F6F8FC]">
+  <body class="w-full h-screen bg-[#F6F8FC] flex">
+    <!-- Section 1 -->
+    <!-- menu -->
     <div class="w-[68px] h-screen bg-[#EAF1FB] flex flex-col items-center">
       <span
-        class="material-symbols-outlined mt-2 font-bold p-3 rounded-full hover:bg-[#DDE3EC] scale-110"
+        class="material-symbols-outlined mt-2 font-bold p-3 rounded-full hover:bg-[#DDE3EC] scale-110 hover:cursor-pointer"
       >
         menu
       </span>
-      <ul class="mt-4">
-        <li class="flex flex-col items-center justify-between h-12">
-          <span class="material-symbols-outlined scale-90 hover:bg-[#DADCE0]">
+      <ul class="mt-4 flex flex-col space-y-3">
+        <!-- mail -->
+        <li class="flex flex-col items-center justify-between h-12 font-bold">
+          <span
+            class="material-symbols-outlined rounded-[14px] scale-90 py-1 px-3 transition-all duration-200 hover:cursor-pointer hover:px-3 hover:py-1 hover:bg-[#DADCE0] h-full bg-[#D3E3FD]"
+          >
             mail
           </span>
-          <h5 class="-mt-1">Mail</h5>
+          <h5>Mail</h5>
         </li>
-        <li class="flex flex-col items-center justify-between h-12"></li>
-        <li class="flex flex-col items-center justify-between h-12"></li>
-        <li class="flex flex-col items-center justify-between h-12"></li>
+        <!-- message -->
+        <li class="flex flex-col items-center justify-between h-12 font-thin">
+          <span
+            class="material-symbols-outlined rounded-[14px] scale-90 py-0 px-0 transition-all duration-200 hover:cursor-pointer hover:px-3 hover:py-1 hover:bg-[#DADCE0] h-full"
+          >
+            chat_bubble
+          </span>
+          <h5>Chat</h5>
+        </li>
+        <!-- Google Meet -->
+        <li class="flex flex-col items-center justify-between h-12">
+          <span
+            class="material-symbols-outlined rounded-[14px] scale-90 py-0 px-0 transition-all duration-200 hover:cursor-pointer hover:px-3 hover:py-1 hover:bg-[#DADCE0] h-full"
+          >
+            Videocam
+          </span>
+          <h5>Meet</h5>
+        </li>
       </ul>
+    </div>
+    <!-- section 2 -->
+    <div class="w-1/5 p-4">
+      <!-- logo -->
+      <header class="-mt-2">
+        <img
+          src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+          alt="Gmail"
+        />
+      </header>
+      <div>
+        <button
+          class="flex justify-between items-center w-3/5 p-[18px] bg-[#C2E7FF] rounded-2xl mt-3 hover:shadow-md hover:drop-shadow-xl"
+        >
+          <span class="material-symbols-outlined"> edit </span> Compose
+        </button>
+      </div>
+      <ul class="mt-4 text-base">
+        <li
+          class="flex w-[95%] py-1 px-4 rounded-2xl ml-0 space-x-4 bg-[#D3E3FD]"
+        >
+          <span class="material-symbols-rounded scale-75"> inbox </span>
+          <h5>Inbox</h5>
+        </li>
+        <li
+          class="flex w-[95%] py-1 px-4 rounded-2xl ml-0 space-x-4 hover:cursor-pointer hover:text-gray-600 hover:bg-[#EAEBEF]"
+        >
+          <span class="material-symbols-outlined scale-75"> star </span>
+          <h5>Starred</h5>
+        </li>
+        <li
+          class="flex w-[95%] py-1 px-4 rounded-2xl ml-0 space-x-4 hover:cursor-pointer hover:text-gray-600 hover:bg-[#EAEBEF]"
+        >
+          <span class="material-symbols-outlined scale-75"> schedule </span>
+          <h5>Snoozed</h5>
+        </li>
+        <li
+          class="flex w-[95%] py-1 px-4 rounded-2xl ml-0 space-x-4 hover:cursor-pointer hover:text-gray-600 hover:bg-[#EAEBEF]"
+        >
+          <span class="material-symbols-outlined scale-75"> send </span>
+          <h5>Sent</h5>
+        </li>
+        <li
+          class="flex w-[95%] py-1 px-4 rounded-2xl ml-0 space-x-4 hover:cursor-pointer hover:text-gray-600 hover:bg-[#EAEBEF]"
+        >
+          <span class="material-symbols-outlined scale-75"> draft </span>
+          <h5>Drafts</h5>
+        </li>
+        <li
+          class="flex w-[95%] py-1 px-4 rounded-2xl ml-0 space-x-4 hover:cursor-pointer hover:text-gray-600 hover:bg-[#EAEBEF]"
+        >
+          <span class="material-symbols-outlined scale-75"> expand_more </span>
+          <h5>More</h5>
+        </li>
+      </ul>
+      <div class="flex w-11/12 items-center justify-between mt-6">
+        <h5>Labels</h5>
+        <span
+          class="material-symbols-outlined p-1 hover:cursor-pointer rounded-full hover:bg-[#EAEBEF]"
+        >
+          add
+        </span>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="w-3/4 h-screen">
+      <nav class="mt-2">
+        <div
+          class="flex w-[73%] mt-2 justify-between bg-[#EAF1FB] items-center px-2 rounded-3xl"
+        >
+          <span class="flex items-center w-full">
+            <span
+              class="material-symbols-outlined hover:bg-[#EAEBEF] p-[6px] rounded-full hover:cursor-pointer"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              id="search"
+              placeholder="Search in mail"
+              class="w-10/12 border-none outline-none p-3 bg-[#EAF1FB]"
+            />
+          </span>
+          <span
+            class="material-symbols-outlined hover:bg-[#EAEBEF] p-[6px] rounded-full hover:cursor-pointer"
+          >
+            tune
+          </span>
+        </div>
+      </nav>
     </div>
   </body>
 </html>
