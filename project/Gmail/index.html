@@ -145,9 +145,9 @@
 
     <!-- Section 3 -->
     <div class="w-3/4 h-screen">
-      <nav class="mt-2">
+      <nav class="flex space-x-4">
         <div
-          class="flex w-[73%] mt-2 justify-between bg-[#EAF1FB] items-center px-2 rounded-3xl"
+          class="flex w-[64%] mt-2 justify-between bg-[#EAF1FB] items-center px-2 rounded-3xl focus-within:bg-white focus-within:drop-shadow-lg"
         >
           <span class="flex items-center w-full">
             <span
@@ -159,7 +159,7 @@
               type="search"
               id="search"
               placeholder="Search in mail"
-              class="w-10/12 border-none outline-none p-3 bg-[#EAF1FB]"
+              class="w-10/12 border-none outline-none p-3 bg-[#EAF1FB] focus:bg-white"
             />
           </span>
           <span
@@ -168,7 +168,82 @@
             tune
           </span>
         </div>
+        <div class="flex items-center gap-2">
+          <button
+            class="flex mt-2 bg-[#EAF1FB] p-3 rounded-full hover:bg-[#E4ECF8]"
+          >
+            <span class="material-symbols-rounded scale-[.65] text-[#1e8e3e]">
+              circle
+            </span>
+            <h5>Active</h5>
+            <span class="material-symbols-outlined scale-75">
+              expand_more
+            </span>
+          </button>
+          <span
+            class="material-symbols-outlined p-[7px] mt-2 rounded-full hover:bg-[#EAEBEF] hover:cursor-pointer"
+          >
+            help
+          </span>
+          <span
+            class="material-symbols-outlined p-[7px] mt-2 rounded-full hover:bg-[#EAEBEF] hover:cursor-pointer"
+          >
+            settings
+          </span>
+          <span
+            class="material-symbols-outlined p-[7px] mt-2 rounded-full hover:bg-[#EAEBEF] hover:cursor-pointer"
+          >
+            apps
+          </span>
+        </div>
+        <div>
+          <img
+            src="https://cdn.dribbble.com/users/79851/screenshots/14621514/media/51c5d20cf32090e9f632b7c7b505f0b1.jpg"
+            alt=""
+            class="mt-3 scale-110 rounded-full hover:bg-[#EAEBEF] hover:cursor-pointer h-10 w-10 object-cover p-1 ml-4"
+          />
+        </div>
       </nav>
+      <div class="float-right mt-4 flex flex-col gap-5">
+        <span
+          class="rounded-full flex flex-col mr-5 w-8 h-8 hover:bg-[#EAEBEF] hover:cursor-pointer p-2 scale-110"
+        >
+          <img
+            src="https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png"
+            alt=""
+          />
+        </span>
+        <span
+          class="rounded-full flex flex-col mr-5 w-8 h-8 hover:bg-[#EAEBEF] hover:cursor-pointer p-2 scale-110"
+        >
+          <img
+            src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png"
+            alt=""
+          />
+        </span>
+        <span
+          class="rounded-full flex flex-col mr-5 w-8 h-8 hover:bg-[#EAEBEF] hover:cursor-pointer p-2 scale-110"
+        >
+          <img
+            src="https://www.gstatic.com/companion/icon_assets/tasks_2021_2x.png"
+            alt=""
+          />
+        </span>
+        <span
+          class="rounded-full flex flex-col mr-5 w-8 h-8 hover:bg-[#EAEBEF] hover:cursor-pointer p-2 scale-110"
+        >
+          <img
+            src="https://www.gstatic.com/companion/icon_assets/contacts_2022_2x.png"
+            alt=""
+          />
+        </span>
+        <hr />
+        <span
+          class="rounded-full flex flex-col mr-5 w-8 h-8 hover:bg-[#EAEBEF] hover:cursor-pointer p-2 scale-110 items-center justify-center"
+        >
+          <span class="material-symbols-outlined"> add </span>
+        </span>
+      </div>
     </div>
   </body>
 </html>
