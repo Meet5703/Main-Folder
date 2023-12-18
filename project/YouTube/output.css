@@ -707,6 +707,18 @@ video {
   margin-top: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -814,6 +826,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .border-collapse {
@@ -935,6 +955,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-l-2xl {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -952,6 +976,34 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-b-\[0\.5px\] {
+  border-bottom-width: 0.5px;
+}
+
+.border-b-\[0\.2px\] {
+  border-bottom-width: 0.2px;
+}
+
+.border-b-\[0\.1px\] {
+  border-bottom-width: 0.1px;
+}
+
+.border-b-\[0\.6px\] {
+  border-bottom-width: 0.6px;
+}
+
+.border-b-\[0\.8px\] {
+  border-bottom-width: 0.8px;
 }
 
 .border-none {
@@ -975,6 +1027,18 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
+  border-color: rgba(255,255,255,0.2);
+}
+
+.border-b-\[0\.1\%\] {
+  border-bottom-color: 0.1%;
+}
+
+.border-b-\[0\.6\%\] {
+  border-bottom-color: 0.6%;
 }
 
 .bg-\[\#0F0F0F\] {
@@ -1032,6 +1096,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#222222\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1082,6 +1151,26 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
@@ -1098,6 +1187,22 @@ video {
   padding-top: 0.5rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1111,6 +1216,16 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -1195,4 +1310,8 @@ video {
 .focus\:border-blue-700:focus {
   --tw-border-opacity: 1;
   border-color: rgb(29 78 216 / var(--tw-border-opacity));
+}
+
+.focus\:fill-white:focus {
+  fill: #fff;
 }
