@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getUserNames()">Get User Names</button>
+    <ul id="names"></ul>
+    <!-- 
+    In this script i used dom by reading docs and needed stuff for get
+    expected result i read about dom from mdn docs and w3 schools -->
+    <script>
+      function getUserNames() {
+        var Xhtp = new XMLHttpRequest();
+
+        Xhtp.open("GET", "https://jsonplaceholder.typicode.com/users", true);
+
+        Xhtp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            let data = JSON.parse(this.responseText);
+            console.log(data);
+            let ul = document.getElementById("names");
+            for (let i = 0; i < data.length; i++) {
+              let li = document.createElement("li");
+              ul.appendChild(li);
+              li.innerHTML = data[i].name;
+            }
+          }
+        };
+        Xhtp.send();
+      }
+    </script>
+  </body>
+</html>

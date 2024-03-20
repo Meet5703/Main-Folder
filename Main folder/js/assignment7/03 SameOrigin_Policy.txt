@@ -1,0 +1,16 @@
+What is Origin ??
+    In any Website Where Two urls have same port, domain and host thats called  origin of that website 
+
+    for example 
+        www.example1.com/page1.html 
+        and
+        www.example1.com/page 1/url 1 
+here we can se example1 is origin of both links 
+
+Now What is Same Origin Policy ??
+    The same-origin policy is a rule that web browsers follow to prevent websites from accessing data from other websites without permission. It helps keep the internet secure by restricting how documents or scripts from one origin can interact with resources from another origin.    
+
+
+How can We Work around it ??
+
+    To work around the same-origin policy in AJAX, you can use techniques like  JSONP or CORS. JSONP utilizes script tags to fetch data from different domains, while CORS involves configuring the server to allow cross-origin requests.
